@@ -29,7 +29,6 @@ export default {
     eventBus.$on("reset-search", (data) => {
       console.log("SUCCESS", data);
       this.search = null;
-      // this.age = data;
       eventBus.$off("reset-search");
     });
   },

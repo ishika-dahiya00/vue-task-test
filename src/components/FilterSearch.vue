@@ -51,6 +51,8 @@ export default {
   methods: {
     resetFilters() {
       this.$store.dispatch("resetFilters");
+      this.searchSelected= null;
+      this.search= '';
       this.dialog = false;
       eventBus.$emit("reset-search", "reset");
       console.log("RESET");
